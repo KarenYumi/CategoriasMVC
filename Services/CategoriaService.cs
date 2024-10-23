@@ -7,10 +7,8 @@ namespace CategoriasMVC.Services;
 public class CategoriaService : ICategoriaService
 {
     private const string apiEndpoint = "/api/1/categorias/";
-
     private readonly JsonSerializerOptions _options;
     private readonly IHttpClientFactory _clientFactory;
-
     private CategoriaViewModel categoriaVM = new CategoriaViewModel();
     private IEnumerable<CategoriaViewModel> categoriasVM = new List<CategoriaViewModel>();
 
